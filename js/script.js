@@ -44,7 +44,7 @@ function showSingleEvent(json){
     document.querySelector("#single h1").textContent=json.title.rendered;
     document.querySelector("#single .price span").textContent=json.acf.price;
     document.querySelector("#single img").setAttribute("src", json._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
-    document.querySelector(".excerpt").innerHTML = json.excerpt.rendered;
+    document.querySelector(".content").innerHTML = json.content.rendered;
 
 };
 
